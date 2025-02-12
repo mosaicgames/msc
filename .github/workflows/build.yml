@@ -25,6 +25,13 @@ on:
         required: false
         type: string
 
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+  packages: write
+  actions: write
+
 jobs:
   windows:
     runs-on: windows-latest

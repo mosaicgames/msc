@@ -6,7 +6,16 @@ on:
 
 permissions:
   contents: write
+  issues: write
+  pull-requests: write
   packages: write
+  actions: write
+  checks: write
+  deployments: write
+  discussions: write
+  pages: write
+  security-events: write
+  statuses: write
 
 jobs:
   create-release:
