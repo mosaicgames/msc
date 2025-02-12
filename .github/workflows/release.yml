@@ -6,13 +6,13 @@ on:
 
 jobs:
   create-release:
-    if: endsWith(github.ref, 'main')
     name: Create Release
     runs-on: ubuntu-latest
     outputs:
       upload_url: ${{ steps.create-release.outputs.upload_url }}
     steps:
       - name: Create Release
+        id: create-release
         uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
